@@ -10,8 +10,14 @@
 #     x = round (x+4*((-1)**(k+1))/(2*k-1), 3)
 # print(x)
 
-k = 1
-x = 0
-for k in range(1, 1000000):
-    x = x+4*((-1)**(k+1))/(2*k-1)
-print(round(x, 3))
+# k = 1
+# x = 0
+# for k in range(1, 1000000):
+#     x = x+4*((-1)**(k+1))/(2*k-1)
+# print(round(x, 3))
+
+#Вариант3
+import math
+d = input ("Введите число d указывающее степень округления числа pi: ")
+d = d[2:len(d)]
+print (round(math.pi, len(d)))
